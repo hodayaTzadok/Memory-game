@@ -1,71 +1,104 @@
-form{
-    margin: 10px;
-    padding: 10px;
-    border: 1px solid black;
+form {
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid black;
 }
-div{
-    padding: 10px;
-    
+div {
+  padding: 10px;
 }
-#board{
+#board {
   display: flex;
   gap: 10px;
   /* grid-template-columns: repeat(auto-fill,125px); */
   border-radius: 10px;
   flex-wrap: wrap;
+  width: 47%;
+  margin-left: 32%;
 }
-.card{
-    /* background-color: rgb(85, 85, 96); */
-    border: 1px solid rgb(14, 14, 13);
-    height: 150px;
-    width: 80px;
-    cursor: pointer;
-    font-size:4rem ;
-    text-align: center;
-    position: relative;
-    border-radius: 10px;
-    margin: 5px;
-    
+.card {
+  /* background-color: rgb(85, 85, 96); */
+  border: 1px solid rgb(14, 14, 13);
+  height: 150px;
+  width: 80px;
+  cursor: pointer;
+  font-size: 4rem;
+  text-align: center;
+  position: relative;
+  border-radius: 10px;
+  margin: 5px;
 }
 @media screen and (max-width: 578px) {
   .card {
-     font-size: 3rem;
+    font-size: 3rem;
   }
 }
-.card:hover{
-    background-color:rgb(138, 133, 233);
+.card:hover {
+  background-image: url(smile.jpg);
 }
-.back-card{
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    background-image: url(smile.jpg);
+.back-card {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: url("./2610670.jpg");
 }
-#player active{
-    font-weight: bold;
-    font-family: 'Lakki Reddy', cursive;
-  }
+#player active {
+  font-weight: bold;
+  font-family: "Lakki Reddy", cursive;
+}
 
-  #player nonActive{
-    font-weight: bold;
-  }
+#player nonActive {
+  font-weight: bold;
+}
 
-  [name="player"]{
-    width: 80px;
-    height: 80px;
-    border-radius: 15px;
-  }
+[name="player"] {
+  width: 80px;
+  height: 80px;
+  border-radius: 15px;
+}
 
-  input{
-    font-size: 12px;
-    border-color: lightgrey;
-  }
+.inputPlayer {
+  color: azure;
+  font-size: 15px;
+  border-color: lightgrey;
+  background-color: black;
+}
 
-  .activePlayer{
-    border: plum solid 8px;
-  }
-  body{
-      margin: auto;
-      text-align: center;
-      background-color: aqua;
-    }
+/* .activePlayer {
+  border: plum solid 8px;
+} */
+body {
+  margin: auto;
+  text-align: center;
+  background-image: url("./215112.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#score_player1 {
+  color: azure;
+  font-size: 22px;
+}
+#score_player2 {
+  color: azure;
+  font-size: 22px;
+}
+
+.players {
+  display: flex;
+  justify-content: center;
+}
+
+.player1_class {
+  width: 60px;
+  border: rgb(244, 21, 6) solid 15px;
+}
+.player2_class {
+  width: 60px;
+
+  border: rgb(244, 21, 6) solid 15px;
+}
+
+#win {
+  font-size: 60px;
+  color: white;
+}
